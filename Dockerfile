@@ -6,12 +6,9 @@ RUN apt-get update
 
 RUN apt-get -y install build-essential git libsndfile1-dev libliquid-dev
 
+USER gitpod
+
 RUN git clone https://github.com/windytan/redsea.git && cd redsea && ./autogen.sh && ./configure && make && make install
-
-ADD . /redsea
-
-WORKDIR /redsea
-
 
 
 
