@@ -4,8 +4,8 @@ USER root
 
 RUN apt-get update
 
-RUN apt-get -y install wine32
 RUN apt-get -y install wine64
+RUN apt-get -y install wine32
 
 
 
