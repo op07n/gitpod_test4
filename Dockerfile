@@ -8,7 +8,7 @@ RUN apt-get -y install wine64
 
 RUN dpkg --add-architecture i386
 
-RUN apt-get install wine32
+RUN apt-get -y install playonlinux
 
 
 
