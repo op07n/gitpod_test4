@@ -2,13 +2,9 @@ FROM gitpod/workspace-full-vnc:latest
 
 USER root
 
-RUN apt-get update
-
-RUN dpkg --add-architecture i386
-
-RUN apt-get -y install playonlinux
 
 
+RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y alsa-base sudo wine32 playonlinux
 
 
     
