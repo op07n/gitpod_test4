@@ -4,7 +4,7 @@ USER root
 
 RUN apt-get update
 
-RUN apt-get -y install build-essential git libsndfile1-dev libliquid-dev flac
+RUN apt-get -y install win64
 
 
 
