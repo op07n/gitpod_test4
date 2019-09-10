@@ -4,7 +4,7 @@ USER root
 
 RUN apt-get update
 
-RUN apt-get -y install win64
+RUN apt-get -y install wine64
 
 
 
